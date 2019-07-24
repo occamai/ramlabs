@@ -1,0 +1,133 @@
+@import '../../styles/mixins';
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 10px 0 rgba(25, 25, 25, 0.1);
+  z-index: 2;
+  
+  .site-branding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    @include breakpoint-down(sm) {
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  }
+
+  .custom-logo-link {
+    display: inline-block;
+
+    img {
+      transition: all 0.5s ease !important;
+      width: 200px !important;
+      height: auto !important;
+      max-width: 100%;
+
+      @include breakpoint-down(sm) {
+        width: 150px !important;
+      }
+    }
+  }
+
+  .main-navigation {
+    clear: both;
+    display: flex;
+    justify-content: flex-end;
+    
+    @include breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
+  .router-link {
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    color: #000 !important;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 17px;
+    padding: 15px 20px;
+    font-family: 'Roboto', sans-serif !important;
+
+    &:active {
+      text-decoration: none;
+      color: #0059d0 !important;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: #0059d0 !important;
+    }
+  }
+
+  .slicknav_menu {
+    display: none;
+    padding: 10px 0 10px 10px;
+    @include breakpoint-down(sm) {
+      display: block;
+    }
+  }
+
+  .slicknav_icon {
+    display: flex;
+    flex-direction: column;
+
+    &-bar {
+      display: block;
+      width: 1.75em;
+      height: 0.15em;
+      border-radius: 1px;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+      background-color: #000;
+      margin: 4px 0;
+    }
+  }
+  .nav--mobile--menu {
+    display: flex;
+    flex-direction: column;
+    // padding: 0 15px;
+    transition: all .5s ease;
+
+    &--inactive {
+      display: none;
+    }
+
+    &-link {
+      cursor: pointer;
+      margin: 2px 0;
+      background-color: #e9e9e9;
+      color: #000;
+      padding: 7px 10px;
+      border-radius: 4px;
+      text-decoration: none;
+      outline: 0;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 17px;
+      font-family: 'Roboto', sans-serif !important;
+
+      &:active {
+        text-decoration: none;
+        color: #0059d0 !important;
+      }
+  
+      &:hover {
+        text-decoration: none;
+        color: #0059d0 !important;
+      }
+    }
+  }
+}

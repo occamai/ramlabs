@@ -1,0 +1,63 @@
+@import './mixins';
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  color: #212529;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body.fontLoaded {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+#app {
+  background-color: #ffffff;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+p,
+label {
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.5em;
+}
+
+a {
+  color: #3454D1;
+}
+body.fontLoaded.inactive {
+  overflow: hidden;
+}
+.p-b-30 {
+  padding-bottom: 30px !important; 
+}
+.container {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+
+  @include breakpoint-down(lg) {
+    max-width: 1140px;
+  }
+
+  @include breakpoint-down(md) {
+    max-width: 960px;
+  }
+
+  @include breakpoint-down(sm) {
+    max-width: 720px;
+  }
+
+  @include breakpoint-down(xs) {
+    max-width: 540px;
+  }
+}
