@@ -1,3 +1,4 @@
+
 import data_1_a from '../../images/RAM-e1518601759565-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png';
 import data_1_b from '../../images/Chip-e1518601899365-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png';
 import data_2_a from '../../images/Perfomance-e1518601974872-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png';
@@ -9,7 +10,9 @@ import data_4_a from '../../images/rsz_datacenter_server_room.jpg';
 import data_4_b from '../../images/PgIsmkx.jpg'; //'../../images/autonomous_vehicle-1024x683.jpg';
 import data_4_c from '../../images/face.png'; //images/rsz_digital_drone.jpg';
 
+
 export const DATA_1 = [
+
   {
     img: data_1_a,
     //img: 'http://www.numem.com/wp-content/uploads/elementor/thumbs/RAM-e1518601759565-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png',
