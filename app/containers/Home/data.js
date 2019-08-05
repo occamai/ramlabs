@@ -4,8 +4,9 @@ import data_1_b from '../../images/Chip-e1518601899365-no5fx2j0hnpezo5l54hrjzg1u
 import data_2_a from '../../images/Perfomance-e1518601974872-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png';
 import data_2_b from '../../images/SRAM_size_reduction-1-e1518602441369-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png';
 import data_2_c from '../../images/Secure-e1518602037890-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png';
-import data_3_a from '../../images/rsz_iot_mordern_cityscape.jpg';
-import data_3_b from '../../images/ai_robot.jpg';
+//import data_3_a from '../../images/rsz_iot_mordern_cityscape.jpg';
+import data_3_a from '../../images/new_billion_scale.png';
+import data_3_b from '../../images/new_ai_robot.png';
 import data_4_a from '../../images/rsz_datacenter_server_room.jpg';
 import data_4_b from '../../images/PgIsmkx.jpg'; //'../../images/autonomous_vehicle-1024x683.jpg';
 import data_4_c from '../../images/face.png'; //images/rsz_digital_drone.jpg';
@@ -37,7 +38,7 @@ export const DATA_2 = [
   {
     img: data_2_b,
     //img: 'http://www.numem.com/wp-content/uploads/elementor/thumbs/SRAM_size_reduction-1-e1518602441369-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png',
-    title: 'Benefits over GPU',
+    title: 'Benefits over FPGA',
   },
   {
     img: data_2_c,

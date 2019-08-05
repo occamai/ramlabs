@@ -27,7 +27,7 @@ export default class Home extends React.PureComponent {
                 <h2 className='main-slider-wrapper-caption-txt-lg'>Innovation</h2>
                 <h2 className='main-slider-wrapper-caption-txt-lg'>Incubation</h2>
                 <h2 className='main-slider-wrapper-caption-txt-lg'>Acceleration</h2>
-                <h6 className='main-slider-wrapper-caption-txt-md'>from Silicon to Software</h6>
+                <h6 className='main-slider-wrapper-caption-txt-md'>from Chips to Apps</h6>
               </div>
             </div>
           </div>
