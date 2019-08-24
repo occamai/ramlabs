@@ -20,9 +20,9 @@ const App = () => (
   <div className='app-wrapper'>
     <Helmet
       titleTemplate='%s'
-      defaultTitle='Ramlabs'
+      defaultTitle='GSI Venture Labs'
     >
-      <meta name='description' content='A Ramlabs application' />
+      <meta name='description' content='A GSI Application' />
     </Helmet>
     <Header />
     <Switch>
