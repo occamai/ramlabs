@@ -31,7 +31,7 @@ class Footer extends React.Component {
                 <div className='col-3 panel-grid-cell-col'>
                   <h3 className='widget-title'>PRODUCT</h3>
                   <div className='menu-container'>
-                    <Link className='menu-container-link' to='/'>Product Overview</Link>
+                    <Link className='menu-container-link' to='/product/1'>Product Overview</Link>
                   </div>
                 </div>
                 <div className='col-3 panel-grid-cell-col'>
