@@ -1,0 +1,331 @@
+@import '../../styles/mixins';
+.product {
+  width: 100%;
+  height: auto;
+  background: #fff;
+
+  &-title {
+    &-img-box {
+      height: 600px;
+      overflow: hidden;
+
+      @include breakpoint-down(sm) {
+        height: 500px;
+      }
+
+      @include breakpoint-down(xs) {
+        height: 400px;
+      }
+
+      img {
+        max-width: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        display: block;
+      }
+    }
+
+    &-container {
+      height: auto;
+      width: 100%;
+      transform: translateY(-49%);
+      margin-bottom: -6%;
+
+      @include breakpoint-down(md) {
+        transform: translateY(-38%);
+      }
+
+      @include breakpoint-down(sm) {
+        transform: translateY(-10%);
+        margin-bottom: 0;
+      }
+
+      &-content {
+        background: #fff;
+        width: 65.5%;
+        margin: 0 auto;
+        box-shadow: 0 20px 46px 0 rgba(24,35,55,.04);
+        border-radius: 6px;
+        padding-bottom: 95px;
+        padding-top: 150px;
+
+        @include breakpoint-down(md) {
+          padding-bottom: 40px;
+          padding-top: 40px;
+          width: 70%;
+        }
+  
+        @include breakpoint-down(sm) {
+          padding-bottom: 30px;
+          padding-top: 30px;
+          width: 80%;
+        }
+
+        &-blue {
+          font-family: 'Roboto', Sans-serif;
+          font-size: 30px;
+          color: #06f;
+          text-align: center;
+
+          @include breakpoint-down(sm) {
+            font-size: 24px;
+          }
+
+          @include breakpoint-down(xs) {
+            font-size: 18px;
+          }
+        }
+
+        &-black {
+          font-size: 30px;
+          color: "black";
+          text-align: center;
+
+          @include breakpoint-down(sm) {
+            font-size: 24px;
+          }
+
+          @include breakpoint-down(xs) {
+            font-size: 18px;
+          }
+        }
+
+        &-p {
+          width: 75%;
+          margin: 50px auto;
+          font-family: 'Roboto', Sans-serif;
+          font-size: 16px;
+          color: #1a2134;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 32px;
+
+          @include breakpoint-down(sm) {
+            width: 80%;
+            margin: 20px auto;
+          }
+
+          @include breakpoint-down(xs) {
+            width: 90%;
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+
+  &-content {
+    &-title {
+      height: auto;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 84px;
+      &-petal {
+        font-family: 'Roboto', Sans-serif;
+        font-size: 30px;
+        color: #06f;
+        position: relative;
+      }
+    }
+
+    &-advantage {
+      width: 100%;
+      height: auto;
+      font-size: 0;
+    }
+  }
+
+  &-middle {
+    background: rgb(251, 251, 251);
+    padding-bottom: 120px;
+
+    @include breakpoint-down(md) {
+      padding-bottom: 10%;
+    }
+
+    @include breakpoint-down(xs) {
+      padding-bottom: 12%;
+    }
+
+    &-title {
+      height: auto;
+      width: 100%;
+      text-align: center;
+      padding-top: 158px;
+      margin-bottom: 125px;
+      
+      @include breakpoint-down(md) {
+        margin-bottom: 7%;
+        padding-top: 10%;
+      }
+
+      @include breakpoint-down(sm) {
+        margin-bottom: 10%;
+        padding-top: 20%;
+      }
+
+      @include breakpoint-down(xs) {
+        margin-bottom: 5%;
+        padding-top: 20%;
+      }
+
+      &-petal {
+        font-family: 'Roboto', Sans-serif;
+        font-size: 30px;
+        color: #06f;
+        position: relative;
+      }
+    }
+
+    &-list {
+      width: 71%;
+      margin: 0 auto;
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @include breakpoint-down(md) {
+        width: 100%;
+      }
+
+      @include breakpoint-down(xs) {
+        width: 100%;
+        margin-top: 13%;
+      }
+    }    
+  }
+
+  &-function {
+    width: 100%;
+    background: #fff;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include breakpoint-down(sm) {
+      flex-direction: column;
+    }
+
+    &-word {
+      width: 50%;
+      
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+
+      &-wrapper {
+        width: 68%;
+        margin: 0 auto;
+
+        @include breakpoint-down(md) {
+          width: 90%;
+        }
+
+        @include breakpoint-down(sm) {
+          width: 68%;
+          padding-bottom: 10%;
+          padding-top: 10%;
+        }
+
+        &-title {
+          font-size: 30px;
+          color: #06f;
+          position: relative;
+          font-family: 'Roboto', Sans-serif;
+          margin-bottom: 30px;
+
+          @include breakpoint-down(md) {
+            font-size: 24px;
+          }
+
+          @include breakpoint-down(sm) {
+            font-size: 18px;
+            text-align: center
+          }
+        }
+
+        &-content {
+          width: 90%;
+          text-align: left;
+          font-family: 'Roboto', Sans-serif;
+          font-size: 16px;
+          color: #1a2134;
+          letter-spacing: 0;
+          line-height: 32px;
+
+          @include breakpoint-down(md) {
+            width: 100%;
+            font-size: 14px;
+          }
+
+          @include breakpoint-down(sm) {
+            text-align: center
+          }
+        }
+      }
+    }
+
+    &-photo {
+      width: 50%;
+      overflow: hidden;
+
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-video {
+    width: 100%;
+    position: relative;
+
+    &-mask {
+      background: rgba(0,102,255,.8);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        font-size: 36px;
+        color: #fff;
+        letter-spacing: 0;
+        text-align: center;
+        font-family: 'Roboto', Sans-serif;
+      }
+
+      .icon {
+        font-size: 54px;
+        display: block;
+        color: hsla(0,0%,100%,.8);
+        margin: 20px 0 0;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-banner {
+      max-height: 350px;
+      overflow: hidden;
+      img {
+        display: block;
+        width: 100%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .product-video-player {
+    width: 100%;
+    height: 100%;
+  }
+}

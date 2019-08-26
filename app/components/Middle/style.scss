@@ -1,0 +1,57 @@
+@import '../../styles/mixins';
+
+.middle {
+  width: 25%;
+  display: inline-block;
+  text-align: center;
+
+  @include breakpoint-down(md) {
+    width: calc(25% - 20px);
+    margin: 10px;
+  }
+
+  @include breakpoint-down(sm) {
+    width: calc(50% - 20px);
+    margin: 10px;
+  }
+
+  @include breakpoint-down(xs) {
+    width: 100%;
+    margin: 10px;
+  }
+
+  &-link {
+    
+    &:hover {
+      text-decoration: none;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      border-radius: 50%;
+      color: #06f;
+      line-height: 100px;
+      margin-bottom: 25px;
+    }
+
+    .title {
+      font-size: 18px;
+      margin-bottom: 25px;
+      font-family: "Roboto", Sans-serif;
+      color: #1a2134;
+      letter-spacing: 0;
+    }
+  
+    p {
+      font-family: "Roboto", Sans-serif;
+      width: 90%;
+      margin: 0 auto;
+      font-size: 14px;
+      color: #1a2134;
+      letter-spacing: 0;
+      line-height: 26px;
+    }
+  }  
+}

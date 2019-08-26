@@ -36,8 +36,8 @@ export default class Home extends React.PureComponent {
               <div className='row'>
                 {
                   DATA_1.map((data, index) =>
-                    <div className='col-md-6 p-b-30'>
-                      <IconCard data = {data} key={`${index}-data-1`}/>
+                    <div className='col-md-6 p-b-30' key={`${index}-data-1`}>
+                      <IconCard data = {data}/>
                     </div>
                   )
                 }
@@ -45,8 +45,8 @@ export default class Home extends React.PureComponent {
               <div className='row'>
                 {
                   DATA_2.map((data, index) =>
-                    <div className='col-md-4 p-b-30'>
-                      <IconCard data = {data} key={`${index}-data-2`}/>
+                    <div className='col-md-4 p-b-30' key={`${index}-data-2`}>
+                      <IconCard data = {data}/>
                     </div>
                   )
                 }
@@ -58,8 +58,8 @@ export default class Home extends React.PureComponent {
               <div className='row'>
                 {
                   DATA_3.map((data, index) =>
-                    <div className='col-md-6 p-b-30'>
-                      <ImageCard data = {data} key={`${index}-data-img-1`}/>
+                    <div className='col-md-6 p-b-30' key={`${index}-data-img-1`}>
+                      <ImageCard data = {data}/>
                     </div>
                   )
                 }
@@ -67,8 +67,8 @@ export default class Home extends React.PureComponent {
               <div className='row'>
                 {
                   DATA_4.map((data, index) =>
-                    <div className='col-md-4 p-b-30'>
-                      <ImageCard data = {data} key={`${index}-data-img-2`}/>
+                    <div className='col-md-4 p-b-30' key={`${index}-data-img-2`}>
+                      <ImageCard data = {data}/>
                     </div>
                   )
                 }

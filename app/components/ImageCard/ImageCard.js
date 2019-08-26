@@ -10,7 +10,7 @@ class ImageCard extends React.Component {
 
     return (
       <div className='image-card'>
-        <Link className='image-card-link' to='/'>
+        <Link className='image-card-link' to='/product/1'>
           <div className='img-wrapper'>
             <img src={img} title={title} alt={title} />
           </div>
