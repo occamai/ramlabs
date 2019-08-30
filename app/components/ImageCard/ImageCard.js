@@ -6,11 +6,11 @@ class ImageCard extends React.Component {
 
 
   render() {
-    const { img, title, description } = this.props.data
-
+    const { pg, img, title, description } = this.props.data
+    console.log("DEBUG", pg, img)
     return (
       <div className='image-card'>
-        <Link className='image-card-link' to='/product/1'>
+        <Link className='image-card-link' to={pg} >
           <div className='img-wrapper'>
             <img src={img} title={title} alt={title} />
           </div>

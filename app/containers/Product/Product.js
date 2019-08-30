@@ -93,6 +93,17 @@ export default class Product extends React.PureComponent {
                   </div>
                 </div>
               </div>
+	      <div className='product-function'>
+                <div className='product-function-word'>
+                  <div className='product-function-word-wrapper'>
+                    <h1 className='product-function-word-wrapper-title'>{data.video.title}</h1>
+                    <p className='product-function-word-wrapper-content'>{data.video.content}</p>
+                  </div>
+                </div>
+                <div className='product-function-photo'>
+                  <img src={data.video.image} />
+                </div>
+              </div>
               <div className='product-content'>
                 <div className='product-content-title'>
                   <h1 className='product-content-title-petal'>{data.techincal.title}</h1>
@@ -115,17 +126,6 @@ export default class Product extends React.PureComponent {
                       <Middle data={data} key={`${index}-data-img-1`} />
                     )
                   }
-                </div>
-              </div>
-              <div className='product-function'>
-                <div className='product-function-word'>
-                  <div className='product-function-word-wrapper'>
-                    <h1 className='product-function-word-wrapper-title'>{data.video.title}</h1>
-                    <p className='product-function-word-wrapper-content'>{data.video.content}</p>
-                  </div>
-                </div>
-                <div className='product-function-photo'>
-                  <img src={data.video.image} />
                 </div>
               </div>
               <div className='product-video'>
