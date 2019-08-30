@@ -52,12 +52,14 @@ export const DATA_2 = [
 
 export const DATA_3 = [
   {
+    id: 1,
     img: data_3_a,
     //img: 'http://www.numem.com/wp-content/uploads/2018/02/rsz_iot_mordern_cityscape.jpg',
     title: 'Billion-Scale Similarity Search',
     description: 'The industry’s leading large-scale similarity search technology stack'
   },
   {
+    id: 2,
     img: data_3_b,
     //img: 'http://www.numem.com/wp-content/uploads/2018/02/ai_robot.jpg',
     //img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLc23vSc4LRlTGa4cCtSr4LL7vvEa3kRhL6d0Kcsy1k2X4tTT9',
@@ -68,6 +70,7 @@ export const DATA_3 = [
 
 export const DATA_4 = [
   {
+    id: 3,
     img: data_4_a,
     //img: 'http://www.numem.com/wp-content/uploads/2018/02/rsz_datacenter_server_room.jpg',
     //img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi72jjERl8KHKKH9oXuQ4-bWedrqWmTP8GqamFclM1lsat9hLu',
@@ -75,6 +78,7 @@ export const DATA_4 = [
     description: 'The best data server accelerators out there with high bandwidth and low latency.'
   },
   {
+    id: 4,
     img: data_4_b,
     //img: 'http://www.numem.com/wp-content/uploads/2018/02/autonomous_vehicle-1024x683.jpg',
     //img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiHkKkXu6FgrFAbLQAuFqlbKxcSbe1kh8s9kEn63x2oCDEbn9Q',
