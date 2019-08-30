@@ -11,6 +11,7 @@ import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from 'containers/Home/Loadable';
+import Space from 'containers/Space/Loadable';
 import Product from 'containers/Product/Loadable';
 import NotFound from 'containers/NotFound/Loadable';
 import Header from 'components/Header';
@@ -28,6 +29,7 @@ const App = () => (
     <Header />
     <Switch>
       <Route exact path='/' component={Home} />
+      <Route exact path='/space' component={Space} />
       <Route exact path='/product/:productid' component={Product} />
       <Route path='' component={NotFound} />
     </Switch>

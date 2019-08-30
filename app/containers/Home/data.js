@@ -32,16 +32,19 @@ export const DATA_1 = [
 export const DATA_2 = [
   {
     img: data_2_a,
+    route: '/',
     //img: 'http://www.numem.com/wp-content/uploads/elementor/thumbs/Perfomance-e1518601974872-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png',
     title: 'Benefits over CPU',
   },
   {
     img: data_2_b,
+    route: '/',
     //img: 'http://www.numem.com/wp-content/uploads/elementor/thumbs/SRAM_size_reduction-1-e1518602441369-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png',
     title: 'Benefits over FPGA',
   },
   {
     img: data_2_c,
+    route: '/space',
     //img: 'http://www.numem.com/wp-content/uploads/elementor/thumbs/Secure-e1518602037890-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png',
     title: 'Ready For Space',
   },
