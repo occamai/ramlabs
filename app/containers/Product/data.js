@@ -1,6 +1,7 @@
 import data_1_a from '../../images/new_billion_scale.png';
 import data_1_b from '../../images/Chip-e1518601899365-no5fx2j0hnpezo5l54hrjzg1usqhw6yt4b2055cpgo.png';
 import data_1_video from '../../images/farmers.mp4';
+import data_1_chip from '../../images/GSI_chip_clip.png';
 import data_2_a from '../../images/PgIsmkx.jpg';
 import data_2_pipeline from '../../images/pipeline2.png'
 import data_2_molecules from '../../images/molecules.jpg'
@@ -82,7 +83,7 @@ export const DATA = [
       "description": "\"By dramatically reducing the time required to search our small-molecule database, GSI’s Gemini empowers us to advance our research processes and ultimately improve human health.\" --Efrat Ben-Zeev, Computational Chemist and Cheminformatics Project Leader Weizmann Institute of Science.",
     },
     "techincal": {
-      "title": "Our Solution",
+      "title": "Our Advantage",
       "advantage": [
         {
           "img": data_2_latency,
@@ -136,6 +137,18 @@ export const DATA = [
       "content": "Pharmaceutical manufacturers are under constant pressure to fast-track innovation and increase the speed at which they introduce successful drugs to market. Various scientific advances are fueling a fresh wave of pharmaceutical manufacturing innovation. These advances are supported by the U.S. Food and Drug Administration (FDA), which is helping accelerate the industry’s throughput of lifesaving medicines and therapeutics by taking a more pragmatic approach to regulation.  Many institutions estimate the cost of developing a successful first-in-class therapy at more than $2 billion. To lower that cost, companies must optimize every aspect of development and manufacturing.",
       "image": data_1_a,
       "url": data_1_video
+    },
+    "solution": {
+	"title": "Our Solution",
+	"content":"Our approach to this problem is based on hardware acceleration. We have built a custom chip that can accelerate many types of search including molecule search. We provide PCIe boards that etc etc etc etc etc.",
+	"image": data_1_chip,
+	"url": data_1_video 
+    },
+    "challenge": {
+	"title": "Challenges in Drug Discovery",
+	"content":"Pharmaceutical manufacturers are under constant pressure to fast-track innovation and increase the speed at which they introduce successful drugs to market. Various scientific advances are fueling a fresh wave of pharmaceutical manufacturing innovation. These advances are supported by the U.S. Food and Drug Administration (FDA), which is helping accelerate the industry’s throughput of lifesaving medicines and therapeutics by taking a more pragmatic approach to regulation.  Many institutions estimate the cost of developing a successful first-in-class therapy at more than $2 billion. To lower that cost, companies must optimize every aspect of development and manufacturing.",
+	"image": data_1_a,
+	"url": data_1_video 
     }
   }
 ]
