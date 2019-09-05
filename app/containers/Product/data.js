@@ -83,22 +83,22 @@ export const DATA = [
       "description": "\"By dramatically reducing the time required to search our small-molecule database, GSI’s Gemini empowers us to advance our research processes and ultimately improve human health.\" --Efrat Ben-Zeev, Computational Chemist and Cheminformatics Project Leader Weizmann Institute of Science.",
     },
     "techincal": {
-      "title": "Our Advantage",
+      "title": "The GSI Advantage",
       "advantage": [
         {
           "img": data_2_latency,
-          "title": "Low Latency",
-          "description": "1 Gemini board can search millions of molecule fingerprints in milli-seconds."
+          "title": "Lowers Drug Development Time and Cost",
+          "description": "Virtual screening is one of the keys to lowering development costs and time. Gemini optimizes virtual screening by providing fast similarity search. Searches that used to take minutes now only take a few hundred milliseconds - greatly improving researchers’ ability to explore the chemical space in depth.",
         },
         {
           "img": data_2_molecules,
-          "title": "High Throughput",
-          "description": "Gemini can search many queries similtaneously."
+          "title": "Provides Scalability",
+          "description": "Gemini’s ultra-fast similarity search eliminates the need to index a small-molecule database. This simplifies database management, and makes it easy to add compounds to the database and to scale the database."
         },
         {
           "img": data_2_pipeline,
-          "title": "Application Integration",
-          "description": "GSI provides software plugins to all the major life science pipelines including Biovia Pipeline Pilot and KNIME."
+          "title": "Allows for Flexible Searches",
+          "description": "Gemini provides the flexibility to work with many different types of molecule fingerprints such as MDL, ECFP, and FCFP, and can work with longer fingerprints (e.g., 8192-bit fingerprints). Gemini also allows for flexible similarity search thresholds to be set. For example, one could initially set the threshold to below 0.4 to find diverse set of molecules to explore. This greatly improves the chances of discovering novel compounds. Then with a diverse set of molecules now in hand, one could set a higher threshold of around 0.8 to find very similar molecules to the hits and to expand the hit space."
         },
         {
           "img": data_2_leader,
@@ -134,19 +134,19 @@ export const DATA = [
     },
     "video": {
       "title": "Challenges",
-      "content": "Pharmaceutical manufacturers are under constant pressure to fast-track innovation and increase the speed at which they introduce successful drugs to market. Various scientific advances are fueling a fresh wave of pharmaceutical manufacturing innovation. These advances are supported by the U.S. Food and Drug Administration (FDA), which is helping accelerate the industry’s throughput of lifesaving medicines and therapeutics by taking a more pragmatic approach to regulation.  Many institutions estimate the cost of developing a successful first-in-class therapy at more than $2 billion. To lower that cost, companies must optimize every aspect of development and manufacturing.",
+      "content": "Drug discovery is a big business. According to Research and Markets, the global small molecule drug discovery market was about $29B in 2018 and is predicted to be roughly $47B in 2024. It is, however, also a difficult business. The average cost to develop a new drug is roughly $2.6 billion, and 90% of new drugs fail to win approval. For those few that do manage to win approval, it still takes at least 10 years to get them to market. So it’s no surprise that leading pharmaceutical companies are always under pressure to find ways to lower the cost and time needed to discover new drugs.",
       "image": data_1_a,
       "url": data_1_video
     },
     "solution": {
 	"title": "Our Solution",
-	"content":"Our approach to this problem is based on hardware acceleration. We have built a custom chip that can accelerate many types of search including molecule search. We provide PCIe boards that etc etc etc etc etc.",
+	"content":"Our approach to this problem is based on hardware acceleration. Gemini is a custom, compute-in-memory chip that combines high speed SRAM and programmable bit-logic interleaved throughout the memory. Gemini computes functions directly on the data using parallel processing. Gemini can be used for ultra-fast molecular structural similarity/substructure search to advance powerful existing structural similarity search algorithms in drug discovery.",
 	"image": data_1_chip,
 	"url": data_1_video 
     },
     "challenge": {
-	"title": "Challenges in Drug Discovery",
-	"content":"Pharmaceutical manufacturers are under constant pressure to fast-track innovation and increase the speed at which they introduce successful drugs to market. Various scientific advances are fueling a fresh wave of pharmaceutical manufacturing innovation. These advances are supported by the U.S. Food and Drug Administration (FDA), which is helping accelerate the industry’s throughput of lifesaving medicines and therapeutics by taking a more pragmatic approach to regulation.  Many institutions estimate the cost of developing a successful first-in-class therapy at more than $2 billion. To lower that cost, companies must optimize every aspect of development and manufacturing.",
+	"title": "Challenges",
+	"content": "Drug discovery is a big business. According to Research and Markets, the global small molecule drug discovery market was about $29B in 2018 and is predicted to be roughly $47B in 2024. It is, however, also a difficult business. The average cost to develop a new drug is roughly $2.6 billion, and 90% of new drugs fail to win approval. For those few that do manage to win approval, it still takes at least 10 years to get them to market. So it’s no surprise that leading pharmaceutical companies are always under pressure to find ways to lower the cost and time needed to discover new drugs.",
 	"image": data_1_a,
 	"url": data_1_video 
     }
