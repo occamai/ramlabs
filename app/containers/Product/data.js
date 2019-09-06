@@ -80,7 +80,7 @@ export const DATA = [
     "product": {
       "title": "Computational Drug Discovery",
       "sub_title": "Small Molecule Search",
-      "description": "\"By dramatically reducing the time required to search our small-molecule database, GSI’s Gemini empowers us to advance our research processes and ultimately improve human health.\" --Efrat Ben-Zeev, Computational Chemist and Cheminformatics Project Leader Weizmann Institute of Science.",
+      "description": "\"By dramatically reducing the time required to search our small-molecule database, GSI’s Gemini empowers us to advance our research processes and ultimately improve human health.\" \n --Efrat Ben-Zeev, Computational Chemist and Cheminformatics Project Leader Weizmann Institute of Science.",
     },
     "techincal": {
       "title": "The GSI Advantage",
@@ -139,16 +139,21 @@ export const DATA = [
       "url": data_1_video
     },
     "solution": {
-	"title": "Our Solution",
-	"content":"Our approach to this problem is based on hardware acceleration. Gemini is a custom, compute-in-memory chip that combines high speed SRAM and programmable bit-logic interleaved throughout the memory. Gemini computes functions directly on the data using parallel processing. Gemini can be used for ultra-fast molecular structural similarity/substructure search to advance powerful existing structural similarity search algorithms in drug discovery.",
-	"image": data_1_chip,
-	"url": data_1_video 
+      "title": "Our Solution",
+      "content":"Our approach to this problem is based on hardware acceleration. Gemini is a custom, compute-in-memory chip that combines high speed SRAM and programmable bit-logic interleaved throughout the memory. Gemini computes functions directly on the data using parallel processing. Gemini can be used for ultra-fast molecular structural similarity/substructure search to advance powerful existing structural similarity search algorithms in drug discovery.",
+      "image": data_1_chip,
+      "url": data_1_video 
     },
     "challenge": {
-	"title": "Challenges",
-	"content": "Drug discovery is a big business. According to Research and Markets, the global small molecule drug discovery market was about $29B in 2018 and is predicted to be roughly $47B in 2024. It is, however, also a difficult business. The average cost to develop a new drug is roughly $2.6 billion, and 90% of new drugs fail to win approval. For those few that do manage to win approval, it still takes at least 10 years to get them to market. So it’s no surprise that leading pharmaceutical companies are always under pressure to find ways to lower the cost and time needed to discover new drugs.",
-	"image": data_1_a,
-	"url": data_1_video 
+      "title": "Challenges",
+      "content": "Drug discovery is a big business. According to Research and Markets, the global small molecule drug discovery market was about $29B in 2018 and is predicted to be roughly $47B in 2024. It is, however, also a difficult business. The average cost to develop a new drug is roughly $2.6 billion, and 90% of new drugs fail to win approval. For those few that do manage to win approval, it still takes at least 10 years to get them to market. So it’s no surprise that leading pharmaceutical companies are always under pressure to find ways to lower the cost and time needed to discover new drugs.",
+      "image": data_1_a,
+      "url": data_1_video 
+    },
+    "questions": {
+      "route": "/question",
+      "title": "To see if our solution is right for you, ",
+      "title_link": "contact us."
     }
   }
 ]

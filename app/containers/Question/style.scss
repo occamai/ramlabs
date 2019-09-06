@@ -1,0 +1,137 @@
+@import '../../styles/mixins';
+.question {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  
+  &-top {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &-container {
+      width: 100%;
+      max-width: 80%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+
+      @include breakpoint-down(lg) {
+        max-width: 90%;
+      }
+
+      @include breakpoint-down(sm) {
+        max-width: 95%;
+      }
+
+      .justify-content-center {
+        margin: auto;
+      }
+
+      .overlay {
+        background: #fff;
+        margin-top: -28vw;
+        border: 1px solid #333;
+        padding: 20px 35px;
+      }
+
+      .input {
+        width: 100%;
+        margin: 17.5px auto;
+      }
+
+      .text_area {
+        width: 100%;
+        margin: 17.5px auto;
+        textarea {
+          height: 100px !important;
+        }
+      }
+
+      .label {
+        color: #000000;
+        font-weight: 500;
+      }
+
+      &-q {
+        margin: 17.5px auto;
+
+        .input_radio {
+          margin-top: 5px;
+          font-size: 14px;
+          flex: 1;
+        }
+
+        .m-l-10 {
+          margin-left: 10px;
+
+          @include breakpoint-down(xs) {
+            margin-left: 0px;
+          }
+        }
+      }
+
+      &-button {
+        display: flex;
+        margin-bottom: -40px;
+
+        &-content {
+          display: block;
+          margin: auto;
+          border: 0;
+          padding: 7px 100px;
+          color: #fff;
+          margin-top: 3px;
+          background: #1971b9;
+          font-size: 18px;
+
+          @include breakpoint-down(xs) {
+            padding: 7px 60px;
+          }
+
+          span {
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  &-map {
+    padding-top: 50px;
+    &-container {
+      width: 100%;
+      max-width: 80%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;      
+
+      @include breakpoint-down(lg) {
+        max-width: 90%;
+      }
+
+      @include breakpoint-down(sm) {
+        max-width: 95%;
+      }
+
+      h3 {
+        font-size: 24px;
+        text-align: left;
+        color: #1971B9;
+        margin: 20px 0;
+        font-weight: 600;
+      }
+
+      img {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.MuiTypography-body1 {
+  font-size: 14px;
+}

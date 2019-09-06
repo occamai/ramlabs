@@ -7,6 +7,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faPlayCircle
@@ -45,7 +46,7 @@ const customStyles = {
     // borderRadius: '5px', 
     alignItems: 'center',
     maxWidth: '898px',
-    margin: '15% auto',
+    margin: '10% auto',
     height: '45%',
     width: '85%',
   }
@@ -72,6 +73,10 @@ export default class Product extends React.PureComponent {
   
   render() {
     const { data } = this.state
+    var desc = []
+    if(Object.keys(data).length > 0) {
+      desc = data.product.description.split('\n')
+    }
     
     return (
       <article>
@@ -90,11 +95,20 @@ export default class Product extends React.PureComponent {
                   <div className='product-title-container-content'>
                     <h1 className='product-title-container-content-blue'>{data.product.title}</h1>
                     <h1 className='product-title-container-content-black'>{data.product.sub_title}</h1>
-                    <p className='product-title-container-content-p'>{data.product.description}</p>
+                    <p className='product-title-container-content-p'>
+                    {
+                      desc.length > 0 && desc.map((e, index ) => {
+                        if(index == desc.length - 1)
+                          return <span key={index}>{e}</span>
+                        else
+                          return <span key={index}>{e}<br/></span>
+                      })
+                    }
+                    </p>
                   </div>
                 </div>
               </div>
-	      <div className='product-function'>
+	            <div className='product-function'>
                 <div className='product-function-word'>
                   <div className='product-function-word-wrapper'>
                     <h1 className='product-function-word-wrapper-title'>{data.challenge.title}</h1>
@@ -105,16 +119,16 @@ export default class Product extends React.PureComponent {
                   <img src={data.challenge.image} />
                 </div>
               </div>
-	      <div className='product-function'>
+	            <div className='product-function'>
+                <div className='product-function-photo'>
+                  <img src={data.solution.image} />
+                </div>
                 <div className='product-function-word'>
                   <div className='product-function-word-wrapper'>
                     <h1 className='product-function-word-wrapper-title'>{data.solution.title}</h1>
                     <p className='product-function-word-wrapper-content'>{data.solution.content}</p>
                   </div>
-                </div>
-                <div className='product-function-photo'>
-                  <img src={data.solution.image} />
-                </div>
+                </div>                
               </div>
               <div className='product-content'>
                 <div className='product-content-title'>
@@ -126,6 +140,16 @@ export default class Product extends React.PureComponent {
                       <Advantage data={data} key={`${index}-data-img-1`} />
                     )
                   }
+                </div>
+              </div>
+              <div className='product-questions'>
+                <div className='product-questions-title'>
+                  <h1 className='product-questions-title-petal'>
+                    {data.questions.title}
+                    <Link className='product-questions-title-link' to={data.questions.route}>
+                      {data.questions.title_link}  
+                    </Link>
+                  </h1>
                 </div>
               </div>
               <div className='product-middle'>
@@ -160,7 +184,7 @@ export default class Product extends React.PureComponent {
               ariaHideApp={false}
             >
               <ReactPlayer
-                url={data.video.url}
+                url={'https://player.vimeo.com/video/326706504'}
                 controls={true}
                 playing={false}
                 width='100%'

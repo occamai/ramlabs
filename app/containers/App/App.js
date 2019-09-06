@@ -13,6 +13,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from 'containers/Home/Loadable';
 import Space from 'containers/Space/Loadable';
 import Product from 'containers/Product/Loadable';
+import Question from 'containers/Question/Loadable';
 import NotFound from 'containers/NotFound/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
@@ -30,6 +31,7 @@ const App = () => (
     <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/space' component={Space} />
+      <Route exact path='/question' component={Question} />
       <Route exact path='/product/:productid' component={Product} />
       <Route path='' component={NotFound} />
     </Switch>
