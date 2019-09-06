@@ -108,27 +108,27 @@ export const DATA = [
       ]
     },
     "middle": {
-      "title": "Molecule Search In Milli-Seconds",
+      "title": "Molecule Search In Milliseconds",
       "content": [
         {
           "img": data_1_b,
           "title": "Resources",
-          "description": "Learn more about molecule search..."
+          "description": "Get more production information about Gemini."
         },
         {
           "img": data_1_b,
           "title": "Customer Stories",
-          "description": "Here from our customers..."
+          "description": "See how customers are using Gemini now."
         },
         {
           "img": data_1_b,
           "title": "Blog",
-          "description": "Learn more about our approach..."
+          "description": "Read more about our approach to drug discovery."
         },
         {
           "img": data_1_b,
           "title": "Events",
-          "description": "Upcoming events..."
+          "description": "Join us at an upcoming meetup or conference."
         }
       ]
     },

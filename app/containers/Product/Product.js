@@ -31,7 +31,8 @@ const customStyles = {
   },
   content : {
     position: 'relative',
-    top: '20%',
+    //gw top: '20%',
+    top: '0px',
     left: '0px',
     right: '0px',
     bottom: '0px',
@@ -45,10 +46,12 @@ const customStyles = {
     border: 'none', 
     // borderRadius: '5px', 
     alignItems: 'center',
-    maxWidth: '898px',
+    //gw maxWidth: '898px',
     margin: '10% auto',
-    height: '45%',
-    width: '85%',
+    //gw height: '45%',
+    //gw width: '85%',
+    height: '80%',
+    width: '80%',
   }
 };
 
