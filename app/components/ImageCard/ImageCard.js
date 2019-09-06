@@ -10,16 +10,32 @@ class ImageCard extends React.Component {
 
     return (
       <div className='image-card'>
-        <Link className='image-card-link' to={pg} >
-          <div className='img-wrapper'>
-            <img src={img} title={title} alt={title} />
-          </div>
-          <div className='content-wrapper'>
-            <h3 className='title'>{title}</h3>
-            <p>{this.props.data.description}</p>
-            <span>Learn More</span>
-          </div>
-        </Link>
+        {
+          pg == '/product/1' ? // when url doesn't work
+            <Link className='image-card-link'>
+                <div className='img-wrapper'>
+                <img src={img} title={title} alt={title} />
+              </div>
+              <div className='content-wrapper'>
+                <h3 className='title'>{title}</h3>
+                <p>{this.props.data.description}</p>
+                <span>Learn More</span>
+              </div>
+            </Link>
+          : 
+            <Link className='image-card-link' to={pg} >
+                <div className='img-wrapper'>
+                <img src={img} title={title} alt={title} />
+              </div>
+              <div className='content-wrapper'>
+                <h3 className='title'>{title}</h3>
+                <p>{this.props.data.description}</p>
+                <span>Learn More</span>
+              </div>
+            </Link>
+        }
+        
+          
       </div>
     );
   }
