@@ -3,7 +3,8 @@ import data_1_b from '../../images/Chip-e1518601899365-no5fx2j0hnpezo5l54hrjzg1u
 import data_1_video from '../../images/farmers.mp4';
 import data_1_chip from '../../images/GSI_chip_clip.png';
 import data_2_a from '../../images/PgIsmkx.jpg';
-import data_2_pipeline from '../../images/pipeline2.png'
+//import data_2_pipeline from '../../images/pipeline2.png'
+import data_2_pipeline from '../../images/pipeline.png'
 import data_2_molecules from '../../images/molecules.jpg'
 import data_2_latency from '../../images/fastmol.png'
 import data_2_leader from '../../images/leader.jpg'
