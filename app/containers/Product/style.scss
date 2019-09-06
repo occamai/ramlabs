@@ -204,7 +204,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    margin-bottom: 125px; 
+ 
     @include breakpoint-down(sm) {
       flex-direction: column;
     }

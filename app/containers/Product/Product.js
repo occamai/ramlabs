@@ -21,6 +21,7 @@ import './style.scss';
 import { DATA } from './data';
 import data_1_a from '../../images/new_ai_robot.png';
 import data_1_video from '../../images/farmers.mp4';
+import data_1_chip from '../../images/GSI_chip.png';
 
 const customStyles = {
   overlay: { 
@@ -93,6 +94,28 @@ export default class Product extends React.PureComponent {
                   </div>
                 </div>
               </div>
+	      <div className='product-function'>
+                <div className='product-function-word'>
+                  <div className='product-function-word-wrapper'>
+                    <h1 className='product-function-word-wrapper-title'>{data.challenge.title}</h1>
+                    <p className='product-function-word-wrapper-content'>{data.challenge.content}</p>
+                  </div>
+                </div>
+                <div className='product-function-photo'>
+                  <img src={data.challenge.image} />
+                </div>
+              </div>
+	      <div className='product-function'>
+                <div className='product-function-word'>
+                  <div className='product-function-word-wrapper'>
+                    <h1 className='product-function-word-wrapper-title'>{data.solution.title}</h1>
+                    <p className='product-function-word-wrapper-content'>{data.solution.content}</p>
+                  </div>
+                </div>
+                <div className='product-function-photo'>
+                  <img src={data.solution.image} />
+                </div>
+              </div>
               <div className='product-content'>
                 <div className='product-content-title'>
                   <h1 className='product-content-title-petal'>{data.techincal.title}</h1>
@@ -115,17 +138,6 @@ export default class Product extends React.PureComponent {
                       <Middle data={data} key={`${index}-data-img-1`} />
                     )
                   }
-                </div>
-              </div>
-              <div className='product-function'>
-                <div className='product-function-word'>
-                  <div className='product-function-word-wrapper'>
-                    <h1 className='product-function-word-wrapper-title'>{data.video.title}</h1>
-                    <p className='product-function-word-wrapper-content'>{data.video.content}</p>
-                  </div>
-                </div>
-                <div className='product-function-photo'>
-                  <img src={data.video.image} />
                 </div>
               </div>
               <div className='product-video'>
