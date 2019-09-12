@@ -14,15 +14,10 @@
   &-link {
     img {
       width: 100%;
-      height: auto;
+      height: auto;      
     }
-
+    
     .content-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      flex-direction: column;
       top: 0;
       position: absolute;
       z-index: 1;
@@ -33,52 +28,62 @@
       background: rgba(0,102,255,.9);
       font-size: 0;
 
+
       &:hover {
         opacity: 1;
       }
+
+      &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+        
+        .title {
+          text-align: center;
+          font-family: 'Roboto', Sans-serif;
+          font-size: 36px;
+          color: #fff;
+          letter-spacing: 0;
+          
+          @include breakpoint-down(md) {
+            font-size: 24px;
+          }
+          
+          @include breakpoint-down(xs) {
+            font-size: 16px;
+          }
+        }
       
-      .title {
-        text-align: center;
-        font-family: 'Roboto', Sans-serif;
-        font-size: 36px;
-        color: #fff;
-        letter-spacing: 0;
-        
-        @include breakpoint-down(md) {
-          font-size: 24px;
-        }
-        
-        @include breakpoint-down(xs) {
-          font-size: 16px;
-        }
-      }
-    
-      p {
-        font-family: 'Roboto', Sans-serif;
-        text-align: center;
-        width: 80%;
-        margin: 10px auto;
-        font-size: 16px;
-        color: #fff;
-        letter-spacing: 0;
-        line-height: 28px;
-
-        @include breakpoint-down(md) {
-          width: 80%;
-          margin: 4% auto;
-          font-size: 14px;
-        }
-
-        @include breakpoint-down(sm) {
-          width: 95%;
-          margin: 2% auto;
-          font-size: 14px;
-        }
-        
-        @include breakpoint-down(xs) {
+        p {
+          font-family: 'Roboto', Sans-serif;
+          text-align: center;
           width: 80%;
           margin: 10px auto;
-          font-size: 13px;
+          font-size: 16px;
+          color: #fff;
+          letter-spacing: 0;
+          line-height: 28px;
+  
+          @include breakpoint-down(md) {
+            width: 80%;
+            margin: 4% auto;
+            font-size: 14px;
+          }
+  
+          @include breakpoint-down(sm) {
+            width: 95%;
+            margin: 2% auto;
+            font-size: 14px;
+          }
+          
+          @include breakpoint-down(xs) {
+            width: 80%;
+            margin: 10px auto;
+            font-size: 13px;
+          }
         }
       }
     }    

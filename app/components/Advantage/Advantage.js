@@ -12,8 +12,10 @@ class Advantage extends React.Component {
         <Link className='advantage-link' to=''>
           <img src={img} title={title} alt={title} />
           <div className='content-wrapper'>
-            <h1 className='title'>{title}</h1>
-            <p>{this.props.data.description}</p>
+            <div className='content-wrapper-inner'>
+              <h1 className='title'>{title}</h1>
+              <p>{this.props.data.description}</p>
+            </div>
           </div>
         </Link>
       </div>
