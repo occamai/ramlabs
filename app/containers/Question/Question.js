@@ -42,6 +42,10 @@ export default class Question extends React.PureComponent {
   handleQuestionChange5 = (e) => this.setState({anwser_5: e.target.value})
   handleQuestionChange6 = (e) => this.setState({anwser_6: e.target.value})
 
+  componentDidMount() {
+    // this.props.match.params.slug
+  }
+
   render() {
     
     return (
@@ -77,120 +81,126 @@ export default class Question extends React.PureComponent {
                     className='input'
                     margin='normal'
                   />
-                  <div className='question-top-container-q'>
-                    <FormLabel component='label' className='label'>Do you current use similarity search for molecule search?</FormLabel>
-                    <RadioGroup
-                      row
-                      aria-label='gender'
-                      value={this.state.anwser_1}
-                      onChange={this.handleQuestionChange1}
-                    >
-                      <FormControlLabel value='yes' control={<Radio />} label='Yes'/>
-                      <FormControlLabel value='no' control={<Radio />} label='No' />
-                      <FormControlLabel value='not_sure' control={<Radio />} label='Not sure' />
-                    </RadioGroup>
-                  </div>
-                  <div className='question-top-container-q'>
-                    <FormLabel component='label' className='label'>Do you use an application for molecule search such as KNIME or BIOVIA Pipeline Pilot?</FormLabel>
-                    <RadioGroup
-                      row
-                      aria-label='gender'
-                      value={this.state.anwser_2}
-                      onChange={this.handleQuestionChange2}
-                    >
-                      <FormControlLabel value='no' control={<Radio />} label='No' />
-                      <FormControlLabel value='yes' control={<Radio />} label='Yes, I use' className='m-l-10'/>
-                      <TextField
-                        className='input_radio'
-                        margin='normal'
-                        onChange={(anwser_2_dec) => this.setState({anwser_2_dec})}
-                        disabled={this.state.anwser_2 == 'yes' ? false : true}
-                      />
-                    </RadioGroup>
-                  </div>
-                  <div className='question-top-container-q'>
-                    <FormLabel component='label' className='label'>Do you know the current size of your database?</FormLabel>
-                    <RadioGroup
-                      row
-                      aria-label='gender'
-                      value={this.state.anwser_3}
-                      onChange={this.handleQuestionChange3}
-                    >
-                      <FormControlLabel value='no' control={<Radio />} label="I don't know" />
-                      <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
-                      <TextField
-                        className='input_radio'
-                        margin='normal'
-                        disabled={this.state.anwser_3 == 'yes' ? false : true}
-                        onChange={(anwser_3_dec) => this.setState({anwser_3_dec})}
-                      />
-                    </RadioGroup>
-                  </div>
-                  <div className='question-top-container-q'>
-                    <FormLabel component='label' className='label'>Do you know the size of your molecule fingerprints?</FormLabel>
-                    <RadioGroup
-                      row
-                      aria-label='gender'
-                      value={this.state.anwser_4}
-                      onChange={this.handleQuestionChange4}
-                    >
-                      <FormControlLabel value='no' control={<Radio />} label="I don't know" />
-                      <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
-                      <TextField
-                        className='input_radio'
-                        margin='normal'
-                        disabled={this.state.anwser_4 == 'yes' ? false : true}
-                        onChange={(anwser_4_dec) => this.setState({anwser_4_dec})}
-                      />
-                    </RadioGroup>
-                  </div>
-                  <div className='question-top-container-q'>
-                    <FormLabel component='label' className='label'>Do you have latency requirements?</FormLabel>
-                    <RadioGroup
-                      row
-                      aria-label='gender'
-                      value={this.state.anwser_5}
-                      onChange={this.handleQuestionChange5}
-                    >
-                      <FormControlLabel value='no' control={<Radio />} label="No" />
-                      <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
-                      <TextField
-                        className='input_radio'
-                        margin='normal'
-                        disabled={this.state.anwser_5 == 'yes' ? false : true}
-                        onChange={(anwser_5_dec) => this.setState({anwser_5_dec})}
-                      />
-                    </RadioGroup>
-                  </div>
-                  <div className='question-top-container-q'>
-                    <FormLabel component='label' className='label'>Do you have batch requirements?</FormLabel>
-                    <RadioGroup
-                      row
-                      aria-label='gender'
-                      value={this.state.anwser_6}
-                      onChange={this.handleQuestionChange6}
-                    >
-                      <FormControlLabel value='no' control={<Radio />} label="No" />
-                      <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
-                      <TextField
-                        className='input_radio'
-                        margin='normal'
-                        disabled={this.state.anwser_6 == 'yes' ? false : true}
-                        onChange={(anwser_6_dec) => this.setState({anwser_6_dec})}
-                      />
-                    </RadioGroup>
-                  </div>
-                  <div className='question-top-container-q'>
-                    <FormLabel component='label' className='label'>Is there anything else you want to add?</FormLabel>
-                    <TextField
-                        className='text_area'
-                        margin='normal'
-                        multiline
-                        aria-label="minimum height"
-                        rowsMax='5'
-                        onChange={(anwser_7_dec) => this.setState({anwser_7_dec})}
-                      />
-                  </div>
+                  {
+                    this.props.match.params.slug == 'drugdiscovery' && 
+                    <div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Do you current use similarity search for molecule search?</FormLabel>
+                        <RadioGroup
+                          row
+                          aria-label='gender'
+                          value={this.state.anwser_1}
+                          onChange={this.handleQuestionChange1}
+                        >
+                          <FormControlLabel value='yes' control={<Radio />} label='Yes'/>
+                          <FormControlLabel value='no' control={<Radio />} label='No' />
+                          <FormControlLabel value='not_sure' control={<Radio />} label='Not sure' />
+                        </RadioGroup>
+                      </div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Do you use an application for molecule search such as KNIME or BIOVIA Pipeline Pilot?</FormLabel>
+                        <RadioGroup
+                          row
+                          aria-label='gender'
+                          value={this.state.anwser_2}
+                          onChange={this.handleQuestionChange2}
+                        >
+                          <FormControlLabel value='no' control={<Radio />} label='No' />
+                          <FormControlLabel value='yes' control={<Radio />} label='Yes, I use' className='m-l-10'/>
+                          <TextField
+                            className='input_radio'
+                            margin='normal'
+                            onChange={(anwser_2_dec) => this.setState({anwser_2_dec})}
+                            disabled={this.state.anwser_2 == 'yes' ? false : true}
+                          />
+                        </RadioGroup>
+                      </div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Do you know the current size of your database?</FormLabel>
+                        <RadioGroup
+                          row
+                          aria-label='gender'
+                          value={this.state.anwser_3}
+                          onChange={this.handleQuestionChange3}
+                        >
+                          <FormControlLabel value='no' control={<Radio />} label="I don't know" />
+                          <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
+                          <TextField
+                            className='input_radio'
+                            margin='normal'
+                            disabled={this.state.anwser_3 == 'yes' ? false : true}
+                            onChange={(anwser_3_dec) => this.setState({anwser_3_dec})}
+                          />
+                        </RadioGroup>
+                      </div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Do you know the size of your molecule fingerprints?</FormLabel>
+                        <RadioGroup
+                          row
+                          aria-label='gender'
+                          value={this.state.anwser_4}
+                          onChange={this.handleQuestionChange4}
+                        >
+                          <FormControlLabel value='no' control={<Radio />} label="I don't know" />
+                          <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
+                          <TextField
+                            className='input_radio'
+                            margin='normal'
+                            disabled={this.state.anwser_4 == 'yes' ? false : true}
+                            onChange={(anwser_4_dec) => this.setState({anwser_4_dec})}
+                          />
+                        </RadioGroup>
+                      </div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Do you have latency requirements?</FormLabel>
+                        <RadioGroup
+                          row
+                          aria-label='gender'
+                          value={this.state.anwser_5}
+                          onChange={this.handleQuestionChange5}
+                        >
+                          <FormControlLabel value='no' control={<Radio />} label="No" />
+                          <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
+                          <TextField
+                            className='input_radio'
+                            margin='normal'
+                            disabled={this.state.anwser_5 == 'yes' ? false : true}
+                            onChange={(anwser_5_dec) => this.setState({anwser_5_dec})}
+                          />
+                        </RadioGroup>
+                      </div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Do you have batch requirements?</FormLabel>
+                        <RadioGroup
+                          row
+                          aria-label='gender'
+                          value={this.state.anwser_6}
+                          onChange={this.handleQuestionChange6}
+                        >
+                          <FormControlLabel value='no' control={<Radio />} label="No" />
+                          <FormControlLabel value='yes' control={<Radio />} label="Yes, It's" className='m-l-10'/>
+                          <TextField
+                            className='input_radio'
+                            margin='normal'
+                            disabled={this.state.anwser_6 == 'yes' ? false : true}
+                            onChange={(anwser_6_dec) => this.setState({anwser_6_dec})}
+                          />
+                        </RadioGroup>
+                      </div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Is there anything else you want to add?</FormLabel>
+                        <TextField
+                            className='text_area'
+                            margin='normal'
+                            multiline
+                            aria-label="minimum height"
+                            rowsMax='5'
+                            onChange={(anwser_7_dec) => this.setState({anwser_7_dec})}
+                          />
+                      </div>
+                    </div>
+                  }
+                  
                   <div className='question-top-container-button'>
                     <div className='question-top-container-button-content'>
                       <span>Send</span><FontAwesomeIcon icon={faAngleRight} />

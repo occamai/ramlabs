@@ -65,11 +65,18 @@ export default class Product extends React.PureComponent {
   }
 
   componentDidMount() {
+    var flag = 0;
     DATA.forEach( e => {
-      if(e.id == this.props.match.params.productid){ // get data by product id
-        this.setState({data: e})
+      if(e.id == this.props.match.params.productid || e.slug == this.props.match.params.productid ){ // get data by product id
+        this.setState({data: e});
+        flag = 1;
       }
     })
+
+    if( flag == 0) {
+      alert('Product not found');
+      this.props.history.push('/');
+    }
   }
 
   handleCloseModal = () =>  this.setState({isOpen: false})
@@ -149,7 +156,7 @@ export default class Product extends React.PureComponent {
                 <div className='product-questions-title'>
                   <h1 className='product-questions-title-petal'>
                     {data.questions.title}
-                    <Link className='product-questions-title-link' to={data.questions.route}>
+                    <Link className='product-questions-title-link' to={data.questions.route + '/' +data.slug}>
                       {data.questions.title_link}  
                     </Link>
                   </h1>

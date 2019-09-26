@@ -81,6 +81,7 @@ export const DATA_4 = [
     title: 'Data Center/Server',
     description: 'The best data server accelerators out there with high bandwidth and low latency.',
     pg: 'undefined',
+    slug: 'datacenter'
   },
   {
     id: 4,
@@ -89,13 +90,15 @@ export const DATA_4 = [
     //img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiHkKkXu6FgrFAbLQAuFqlbKxcSbe1kh8s9kEn63x2oCDEbn9Q',
     title: 'Drug Discovery',
     description: 'Advanced, low latency tools for computational drug discovery.',
-    pg: '/product/2'
+    pg: '/product/drugdiscovery',
+    slug: 'drugdiscovery'
   },
   {
     img: data_4_c,
     //img: 'http://www.numem.com/wp-content/uploads/2018/02/rsz_digital_drone.jpg',
     title: 'Biometrics/Surveillance',
     description: 'State-of-the-art face recogntion and video search.',
-    pg: 'undefined'
+    pg: 'undefined',
+    slug: 'biometricssurveillance'
   },
 ];
