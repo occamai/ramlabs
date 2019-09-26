@@ -24,22 +24,26 @@ export const DATA = [
         {
           "img": data_1_a,
           "title": "High-performance",
-          "description": "Deep learning based visual identification, and quick matching with the target library; Maximum resolution 2M（1920×1080@30fps）"
+          "description": "Deep learning based visual identification, and quick matching with the target library; Maximum resolution 2M（1920×1080@30fps）",
+          "pg": "undefined"
         },
         {
           "img": data_1_a,
           "title": "Low-cost",
-          "description": "Supports front-end database"
+          "description": "Supports front-end database",
+          "pg": "undefined"
         },
         {
           "img": data_1_a,
           "title": "Low power consumption",
-          "description": "Equipped with Horizon's edge AI computing, providing deep learning algorithms-based features."
+          "description": "Equipped with Horizon's edge AI computing, providing deep learning algorithms-based features.",
+          "pg": "undefined"
         },
         {
           "img": data_1_a,
           "title": "Multiple levels",
-          "description": "Supporting 3D digital noise reduction, ultra-wide dynamic, automatic electronic shutter; supporting PoE power supply"
+          "description": "Supporting 3D digital noise reduction, ultra-wide dynamic, automatic electronic shutter; supporting PoE power supply",
+          "pg": "undefined"
         }
       ]
     },
@@ -49,22 +53,26 @@ export const DATA = [
         {
           "img": data_1_b,
           "title": "Traffic violation analysis",
-          "description": "Through automatically detecting, capturing and obtaining evidence, it assists in analysis traffic violations such as running red lights, prohibited cornering and line crossing, going in the wrong direction and illegal parking."
+          "description": "Through automatically detecting, capturing and obtaining evidence, it assists in analysis traffic violations such as running red lights, prohibited cornering and line crossing, going in the wrong direction and illegal parking.",
+          "pg": "undefined"
         },
         {
           "img": data_1_b,
           "title": "Intelligence analysis",
-          "description": "It enables tracking and behavior analysis of particular vehicle targets, detects illegal behaviors such as vehicles with counterfeit registration plates, and provides accompanying vehicle analysis, correlation analysis and general vehicle surveillance."
+          "description": "It enables tracking and behavior analysis of particular vehicle targets, detects illegal behaviors such as vehicles with counterfeit registration plates, and provides accompanying vehicle analysis, correlation analysis and general vehicle surveillance.",
+          "pg": "undefined"
         },
         {
           "img": data_1_b,
           "title": "Road condition analysis",
-          "description": "Based on the vehicle capture, it provides traffic congestion detection, traffic anomaly analysis, and traffic condition analysis."
+          "description": "Based on the vehicle capture, it provides traffic congestion detection, traffic anomaly analysis, and traffic condition analysis.",
+          "pg": "undefined"
         },
         {
           "img": data_1_b,
           "title": "Big data analysis",
-          "description": "Based on the analysis of big data in traffic scenarios, it is able to predict road condition changes, analyze urban functional zones, and assist in urban traffic road planning."
+          "description": "Based on the analysis of big data in traffic scenarios, it is able to predict road condition changes, analyze urban functional zones, and assist in urban traffic road planning.",
+          "pg": "undefined"
         }
       ]
     },
@@ -90,21 +98,25 @@ export const DATA = [
           "img": data_2_latency,
           "title": "Lowers Drug Development Time and Cost",
           "description": "Virtual screening is one of the keys to lowering development costs and time. Gemini optimizes virtual screening by providing fast similarity search. Searches that used to take minutes now only take a few hundred milliseconds - greatly improving researchers’ ability to explore the chemical space in depth.",
+          "pg": "undefined"
         },
         {
           "img": data_2_molecules,
           "title": "Provides Scalability",
-          "description": "Gemini’s ultra-fast similarity search eliminates the need to index a small-molecule database. This simplifies database management, and makes it easy to add compounds to the database and to scale the database."
+          "description": "Gemini’s ultra-fast similarity search eliminates the need to index a small-molecule database. This simplifies database management, and makes it easy to add compounds to the database and to scale the database.",
+          "pg": "undefined"
         },
         {
           "img": data_2_pipeline,
           "title": "Allows for Flexible Searches",
-          "description": "Gemini provides the flexibility to work with many different types of molecule fingerprints such as MDL, ECFP, and FCFP, and can work with longer fingerprints (e.g., 8192-bit fingerprints). Gemini also allows for flexible similarity search thresholds to be set. For example, one could initially set the threshold to below 0.4 to find diverse set of molecules to explore. This greatly improves the chances of discovering novel compounds. Then with a diverse set of molecules now in hand, one could set a higher threshold of around 0.8 to find very similar molecules to the hits and to expand the hit space."
+          "description": "Gemini provides the flexibility to work with many different types of molecule fingerprints such as MDL, ECFP, and FCFP, and can work with longer fingerprints (e.g., 8192-bit fingerprints). Gemini also allows for flexible similarity search thresholds to be set. For example, one could initially set the threshold to below 0.4 to find diverse set of molecules to explore. This greatly improves the chances of discovering novel compounds. Then with a diverse set of molecules now in hand, one could set a higher threshold of around 0.8 to find very similar molecules to the hits and to expand the hit space.",
+          "pg": "undefined"
         },
         {
           "img": data_2_leader,
           "title": "Industry Leader",
-          "description": "Our similarity search hardware accelerator is being used by the biggest names in biopharma including the Weizmann Institute."
+          "description": "Our similarity search hardware accelerator is being used by the biggest names in biopharma including the Weizmann Institute.",
+          "pg": "undefined"
         }
       ]
     },
@@ -114,22 +126,26 @@ export const DATA = [
         {
           "img": data_1_b,
           "title": "Resources",
-          "description": "Get more production information about Gemini."
+          "description": "Get more production information about Gemini.",
+          "pg": "undefined"
         },
         {
           "img": data_1_b,
           "title": "Customer Stories",
-          "description": "See how customers are using Gemini now."
+          "description": "See how customers are using Gemini now.",
+          "pg": "undefined"
         },
         {
           "img": data_1_b,
           "title": "Blog",
-          "description": "Read more about our approach to drug discovery."
+          "description": "Read more about our approach to drug discovery.",
+          "pg": "undefined"
         },
         {
           "img": data_1_b,
           "title": "Events",
-          "description": "Join us at an upcoming meetup or conference."
+          "description": "Join us at an upcoming meetup or conference.",
+          "pg": "undefined"
         }
       ]
     },

@@ -1,23 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import './style.scss';
 
 class Middle extends React.Component {
 
+  onClickLink = (route) => {
+    if(route === 'undefined')
+      alert('This site is just a prototype - not all links work yet.');
+    else
+      this.props.history.push(route);
+  }
 
   render() {
-    const { img, title } = this.props.data
+    const { img, title, pg } = this.props.data
 
     return (
       <div className='middle'>
-        <Link className='middle-link' to='/'>
+        <a className='middle-link' onClick={() => this.onClickLink(pg)}>
           <img src={img} title={title} alt={title} />
           <h3 className='title'>{title}</h3>
           <p>{this.props.data.description}</p>          
-        </Link>
+        </a>
       </div>
     );
   }
 }
 
-export default Middle;
+export default withRouter(Middle);

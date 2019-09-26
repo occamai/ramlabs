@@ -10,7 +10,11 @@ import './style.scss';
 export default function NotFound() {
   return (
     <article>
-      <h1>Page not found.</h1>
+      <div className='not-found-page'>
+        <div className='container'>
+          <h1>This site is just a prototype - not all links work yet.</h1>
+        </div>
+      </div>
     </article>
   );
 }

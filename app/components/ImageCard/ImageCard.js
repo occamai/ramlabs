@@ -1,9 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import './style.scss';
 
 class ImageCard extends React.Component {
 
+  onClickLink = (route) => {
+    if(route === 'undefined')
+      alert('This site is just a prototype - not all links work yet.');
+    else
+      this.props.history.push(route);
+  }
 
   render() {
     const { img, title, description, pg } = this.props.data
@@ -11,34 +17,20 @@ class ImageCard extends React.Component {
     return (
       <div className='image-card'>
         {
-          pg == '/product/1' ? // when url doesn't work
-            <Link className='image-card-link'>
-                <div className='img-wrapper'>
-                <img src={img} title={title} alt={title} />
-              </div>
-              <div className='content-wrapper'>
-                <h3 className='title'>{title}</h3>
-                <p>{this.props.data.description}</p>
-                <span>Learn More</span>
-              </div>
-            </Link>
-          : 
-            <Link className='image-card-link' to={pg} >
-                <div className='img-wrapper'>
-                <img src={img} title={title} alt={title} />
-              </div>
-              <div className='content-wrapper'>
-                <h3 className='title'>{title}</h3>
-                <p>{this.props.data.description}</p>
-                <span>Learn More</span>
-              </div>
-            </Link>
+          <a className='image-card-link' onClick={() => this.onClickLink(pg)}>
+              <div className='img-wrapper'>
+              <img src={img} title={title} alt={title} />
+            </div>
+            <div className='content-wrapper'>
+              <h3 className='title'>{title}</h3>
+              <p>{this.props.data.description}</p>
+              <span>Learn More</span>
+            </div>
+          </a>
         }
-        
-          
       </div>
     );
   }
 }
 
-export default ImageCard;
+export default withRouter(ImageCard);

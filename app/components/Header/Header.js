@@ -15,6 +15,10 @@ class Header extends React.Component {
 		this.setState({ mobileNavOpen: !this.state.mobileNavOpen });
   }
   
+  onClickLink = () => {
+    alert('This site is just a prototype - not all links work yet.');
+  }
+
   render() {
     return (
       <div className='header'>
@@ -39,12 +43,12 @@ class Header extends React.Component {
                 <Link className='router-link' to='/'>
                   Home
                 </Link>
-                <Link className='router-link' to='/about'>
+                <a className='router-link' onClick={() => this.onClickLink()}>
                   About
-                </Link>
-                <Link className='router-link' to='/contact'>
+                </a>
+                <a className='router-link' onClick={() => this.onClickLink()}>
                   Contact Us
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -52,12 +56,12 @@ class Header extends React.Component {
             <Link className='nav--mobile--menu-link' to='/'>
               Home
             </Link>
-            <Link className='nav--mobile--menu-link' to='/about'>
+            <a className='nav--mobile--menu-link' onClick={() => this.onClickLink()}>
               About
-            </Link>
-            <Link className='nav--mobile--menu-link' to='/contact'>
+            </a>
+            <a className='nav--mobile--menu-link' onClick={() => this.onClickLink()}>
               Contact Us
-            </Link>
+            </a>
           </div>
         </div>
       </div>
