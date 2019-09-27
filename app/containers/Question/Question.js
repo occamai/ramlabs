@@ -200,6 +200,24 @@ export default class Question extends React.PureComponent {
                       </div>
                     </div>
                   }
+                {
+                    this.props.match.params.slug == 'biometrics' &&
+                    <div>
+                      <div className='question-top-container-q'>
+                        <FormLabel component='label' className='label'>Do you current have a facial recognition solution?</FormLabel>
+                        <RadioGroup
+                          row
+                          aria-label='gender'
+                          value={this.state.anwser_1}
+                          onChange={this.handleQuestionChange1}
+                        >
+                          <FormControlLabel value='yes' control={<Radio />} label='Yes'/>
+                          <FormControlLabel value='no' control={<Radio />} label='No' />
+                          <FormControlLabel value='not_sure' control={<Radio />} label='Not sure' />
+                        </RadioGroup>
+                      </div>
+		    </div>
+		}
                   
                   <div className='question-top-container-button'>
                     <div className='question-top-container-button-content'>

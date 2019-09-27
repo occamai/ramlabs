@@ -9,6 +9,14 @@ import data_2_molecules from '../../images/molecules.jpg'
 import data_2_latency from '../../images/fastmol.png'
 import data_2_leader from '../../images/leader.jpg'
 
+//import data_biometrics_header from '../../images/facial-recognition-feature_1200x675_hero_090418.jpg'
+import data_biometrics_header from '../../images/biobio.jpg'
+import data_biometrics_challenge from '../../images/facerec.png'
+import data_biometrics_1 from '../../images/bioeye3.png'
+import data_biometrics_2 from '../../images/facesfaces.png'
+import data_biometrics_3 from '../../images/faceacc.png'
+import data_biometrics_4 from '../../images/leader3.png'
+
 export const DATA = [
   {
     "id": 1,
@@ -101,6 +109,7 @@ export const DATA = [
       "title_link": "contact us."
     }
   },
+
   {
     "id": 2,
     "slug": "drugdiscovery",
@@ -140,7 +149,7 @@ export const DATA = [
       ]
     },
     "middle": {
-      "title": "Molecule Search In Milliseconds",
+      "title": "Molecule Search in Milliseconds",
       "content": [
         {
           "img": data_1_b,
@@ -191,5 +200,98 @@ export const DATA = [
       "title": "To see if our solution is right for you, ",
       "title_link": "contact us."
     }
-  }
+  },
+
+  {
+    "id": 5,
+    "slug": "biometrics",
+    "main_image": data_biometrics_header,
+    "product": {
+      "title": "Biometrics and Surveillance",
+      "sub_title": "Gemini Facial Recognition",
+      "description": "GSI introduces a new line of advanced biometrics and surveillance technologies, with unrivaled accuracy and speed."
+    },
+    "challenge": {
+      "title": "Challenges",
+      "content": "Biometrics is big business.  There are a record number of deployments worldwide.  There are also numerous companies out there promising high accuracy and performance.  How can you choose the right solution that's right for you?",
+      "image": data_biometrics_challenge,
+      "url": data_1_video
+    },
+    "solution": {
+      "title": "Our Solution",
+      "content":"Our approach to this problem is based on hardware acceleration. Gemini is a custom, compute-in-memory chip that combines high speed SRAM and programmable bit-logic interleaved throughout the memory. Gemini computes functions directly on the data using parallel processing. Gemini can be used for lightning fast search of large facial recognition databases, into the billions of faces",
+      "image": data_1_chip,
+      "url": data_1_video
+    },
+    "techincal": {
+      "title": "The GSI Advantage",
+      "advantage": [
+        {
+          "img": data_biometrics_1,
+          "title": "Fast",
+          "description": "1 Gemini Chip can search millions of faces in milliseconds.",
+          "pg": "undefined"
+        },
+        {
+          "img": data_biometrics_2,
+          "title": "Scalable",
+          "description": "Combine multiple chips to search billions of faces.",
+          "pg": "undefined"
+        },
+        {
+          "img": data_biometrics_3,
+          "title": "Accurate",
+          "description": "Our hardware is the perfect complement to state-of-the-art deep learning-based facial recognition algorithms such as ArcFace.",
+          "pg": "undefined"
+        },
+        {
+          "img": data_biometrics_4,
+          "title": "Industry Leader",
+          "description": "Our hardware search accelerator is being used by the biggest names in the industry including FaceSix.",
+          "pg": "undefined"
+        }
+      ]
+    },
+    "questions": {
+      "route": "/question",
+      "title": "To see if our solution is right for you, ",
+      "title_link": "contact us."
+    },
+    "middle": {
+      "title": "Face Search in Milliseconds",
+      "content": [
+        {
+          "img": data_1_b,
+          "title": "Resources",
+          "description": "Get more production information about Gemini.",
+          "pg": "undefined"
+        },
+        {
+          "img": data_1_b,
+          "title": "Customer Stories",
+          "description": "See how customers are using Gemini now.",
+          "pg": "undefined"
+        },
+        {
+          "img": data_1_b,
+          "title": "Blog",
+          "description": "Read more about our approach to biometrics.",
+          "pg": "undefined"
+        },
+        {
+          "img": data_1_b,
+          "title": "Events",
+          "description": "Join us at an upcoming meetup or conference.",
+          "pg": "undefined"
+        }
+      ]
+    },
+    "video": { 
+      "title": "Challenges",
+      "content": "",
+      "image": data_1_a,
+      "url": data_1_video
+    }
+ }
+	
 ]
