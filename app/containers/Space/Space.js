@@ -21,6 +21,10 @@ export default class Space extends React.PureComponent {
   constructor(props) {
     super(props)
   }
+ 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   
   render() {    
     return (

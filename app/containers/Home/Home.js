@@ -13,7 +13,11 @@ import './style.scss';
 import { DATA_1, DATA_2, DATA_3, DATA_4 } from './data';
 
 export default class Home extends React.PureComponent {
-  render() {    
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+  
+  render() {
     return (
       <article>
         <Helmet>

@@ -38,7 +38,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         flex-direction: column;
         height: 100%;
         
@@ -67,7 +67,8 @@
           color: #fff;
           letter-spacing: 0;
           line-height: 28px;
-  
+          overflow: hidden;
+
           @include breakpoint-down(md) {
             width: 80%;
             margin: 4% auto;
@@ -81,9 +82,9 @@
           }
           
           @include breakpoint-down(xs) {
-            width: 80%;
+            width: 90%;
             margin: 10px auto;
-            font-size: 13px;
+            font-size: 12px;
           }
         }
       }

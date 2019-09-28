@@ -43,7 +43,7 @@ export default class Question extends React.PureComponent {
   handleQuestionChange6 = (e) => this.setState({anwser_6: e.target.value})
 
   componentDidMount() {
-    // this.props.match.params.slug
+    window.scrollTo(0, 0);
   }
 
   render() {

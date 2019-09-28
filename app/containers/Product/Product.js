@@ -66,6 +66,8 @@ export default class Product extends React.PureComponent {
 
   componentDidMount() {
     var flag = 0;
+    window.scrollTo(0, 0);
+    
     DATA.forEach( e => {
       if(e.id == this.props.match.params.productid || e.slug == this.props.match.params.productid ){ // get data by product id
         this.setState({data: e});
@@ -138,7 +140,7 @@ export default class Product extends React.PureComponent {
                     <h1 className='product-function-word-wrapper-title'>{data.solution.title}</h1>
                     <p className='product-function-word-wrapper-content'>{data.solution.content}</p>
                   </div>
-                </div>                
+                </div> 
               </div>
               <div className='product-content'>
                 <div className='product-content-title'>
